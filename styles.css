@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.main-img {
+    max-width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.image {
+    position: relative;
+}
+
+.eye  {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%);
+    top: 0;
+    width: 100%;
+    height: 98.5%;
+    border-radius: 8px;
+    opacity: 0; 
+    transition: all 0.3s;
+}
+
+.eye:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+ 
+.eye img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-image {
+    max-width: 35px;
+    border: white 1.5px solid;
+    border-radius: 50%; 
+}
+
+.container {
+    max-width: 330px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 5px 10px 8px 10px hsl(216, 51%, 10%);
+}
+
+
+.text {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+h3 {
+    color: hsl(0, 0%, 100%);
+    font-size: 22px; 
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+h3:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+
+h4 {
+    color: hsl(178, 100%, 50%);
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 23px;
+    border-bottom: hsl(215, 32%, 27%) 1.5px solid;
+    margin-top: 15px;
+}
+
+.badge-1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.etherum-icon {
+    height: 100%;
+}
+
+.badge-2 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+}
+
+.clock-icon {
+    height: 100%;
+}
+
+.profile-part {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+span {
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 450px;
+        margin: 0 auto 16px;
+    }
+}
+
+/* .attribution { 
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }*/
